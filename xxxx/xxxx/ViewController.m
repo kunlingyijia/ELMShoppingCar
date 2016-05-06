@@ -139,11 +139,11 @@
     //关键帧动画给上圆形轨迹
     keyframe.path = path.CGPath;//让贝塞尔曲线作为移动轨迹
     //持续时间
-    keyframe.duration = 0.5;
+    //keyframe.duration = 0.5;
     //3 创建分组动画
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.animations = @[keyframe];
-    group.duration = 0.5;
+    group.duration = 1.0;
     group.repeatCount = 1;
     [cell.moveBtn.layer addAnimation:group forKey:nil];
     
